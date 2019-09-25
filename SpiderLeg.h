@@ -14,7 +14,7 @@ class SpiderLeg {
       byte servoMountPin,
       byte servoHipPin,
       byte servoKneePin,
-      byte orientation
+      byte servoSpeed
     );
     void moveMountServo(short mountServoAngle);
     void moveHipServo(short hipServoAngle);
@@ -23,8 +23,8 @@ class SpiderLeg {
       short mountServoAngle,
       short hipServoAngle,
       short kneeServoAngle,
-      bool isSync,
-      float speedMod
+      float speedMod,
+      bool isSync = false,
     );
     void move(
       short mountServoAngle,

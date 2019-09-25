@@ -55,7 +55,7 @@ bool SpiderLeg::isLegReady() {
   return isHipServoReady() && isKneeServoReady() && isMountServoReady();
 }
 
-void SpiderLeg::move(short mountServoAngle, short hipServoAngle, short kneeServoAngle, bool isSync, float speedMod) {
+void SpiderLeg::move(short mountServoAngle, short hipServoAngle, short kneeServoAngle, float speedMod, bool isSync = false) {
   short nextMountPosition = _mountServoPosition;
   short nextHipPosition = _hipServoPosition;
   short nextKneePosition = _kneeServoPosition;
